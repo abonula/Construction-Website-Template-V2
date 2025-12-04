@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SYB ASCEND Construction Company</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="nav__logo">
+                <i class="ri-building-2-line"></i>
+                SYB ASCEND
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html" class="nav__link">Welcome</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="services.html" class="nav__link">Services</a></li>
+                <li><a href="projects.html" class="nav__link">Projects</a></li>
+                <li><a href="contact.html" class="nav__link active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero section--gradient">
+        <div class="hero__content" style="grid-template-columns: 1fr;">
+            <div class="hero__text" style="text-align: center; max-width: 900px; margin: 0 auto;">
+                <p class="section__subtitle" style="color: var(--gold);">CONTACT US</p>
+                <h1>Write to Us & Let's Build</h1>
+                <p>Get in touch with our team to discuss your construction project. We're here to help bring your vision to life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="contact__grid">
+            <!-- Contact Form -->
+            <div class="contact__form">
+                <h2 style="margin-bottom: 2rem;">Send Us a Message</h2>
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Full Name *</label>
+                        <input type="text" id="name" class="form__input" placeholder="John Doe" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email *</label>
+                        <input type="email" id="email" class="form__input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="phone" class="form__label">Phone</label>
+                        <input type="tel" id="phone" class="form__input" placeholder="(123) 456-7890">
+                    </div>
+                    <div class="form__group">
+                        <label for="subject" class="form__label">Subject *</label>
+                        <input type="text" id="subject" class="form__input" placeholder="Project inquiry" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Message *</label>
+                        <textarea id="message" class="form__textarea" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact__info">
+                <div class="info__card">
+                    <div class="info__icon">
+                        <i class="ri-map-pin-line"></i>
+                    </div>
+                    <div class="info__content">
+                        <h3>Address</h3>
+                        <p>1234 Ascend Dr<br>48864 Troy<br>Michigan</p>
+                    </div>
+                </div>
+
+                <div class="info__card">
+                    <div class="info__icon">
+                        <i class="ri-phone-line"></i>
+                    </div>
+                    <div class="info__content">
+                        <h3>Telephone</h3>
+                        <p>517-212-7062<br>123-456-7890</p>
+                    </div>
+                </div>
+
+                <div class="info__card">
+                    <div class="info__icon">
+                        <i class="ri-mail-line"></i>
+                    </div>
+                    <div class="info__content">
+                        <h3>Email</h3>
+                        <p><a href="mailto:abonula@sybascend.com">abonula@sybascend.com</a></p>
+                    </div>
+                </div>
+
+                <div class="info__card">
+                    <div class="info__icon">
+                        <i class="ri-time-line"></i>
+                    </div>
+                    <div class="info__content">
+                        <h3>Business Hours</h3>
+                        <p>MON-FRI: 8 AM - 5 PM</p>
+                    </div>
+                </div>
+
+                <div class="social__section">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media for updates and inspiration</p>
+                    <div class="social__links">
+                        <a href="#" class="social__link"><i class="ri-whatsapp-line"></i></a>
+                        <a href="#" class="social__link"><i class="ri-messenger-line"></i></a>
+                        <a href="#" class="social__link"><i class="ri-telegram-line"></i></a>
+                        <a href="#" class="social__link"><i class="ri-facebook-line"></i></a>
+                        <a href="#" class="social__link"><i class="ri-instagram-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__about">
+                <div class="footer__logo">
+                    <i class="ri-building-2-line"></i>
+                    SYB ASCEND
+                </div>
+                <p class="footer__description">We build safely and confidently in your homes.</p>
+                <p class="footer__email">Email: abonula@sybascend.com</p>
+            </div>
+            <div class="footer__links-section">
+                <h3 class="footer__title">Company</h3>
+                <ul class="footer__links">
+                    <li class="footer__link"><a href="about.html">About Us</a></li>
+                    <li class="footer__link"><a href="services.html">Services</a></li>
+                    <li class="footer__link"><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer__info-section">
+                <h3 class="footer__title">Information</h3>
+                <div class="footer__info">
+                    <p>1234 Ascend Dr</p>
+                    <p>Troy - Michigan</p>
+                    <p>MON-FRI: 8 AM - 5 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; All rights reserved | Building Together</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot">
+        <button class="chatbot__button" onclick="toggleChatbot()" aria-label="Open chat">
+            <i class="ri-message-3-line"></i>
+        </button>
+        <div class="chatbot__window" id="chatbotWindow">
+            <div class="chatbot__header">
+                <h3>SYB ASCEND Assistant</h3>
+                <button class="chatbot__close" onclick="toggleChatbot()">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="chatbot__messages" id="chatMessages">
+                <div class="chatbot__message chatbot__message--bot">
+                    Hello! I'm your SYB ASCEND construction assistant. How can I help you today?
+                </div>
+            </div>
+            <div class="chatbot__input-area">
+                <input type="text" class="chatbot__input" id="chatInput" placeholder="Type your message..." onkeypress="handleKeyPress(event)">
+                <button class="chatbot__send" onclick="sendMessage()">
+                    <i class="ri-send-plane-fill"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/chatbot.js"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
